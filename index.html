@@ -16,7 +16,6 @@ body{
     font-family:Arial, sans-serif;
     color:white;
     overflow-x:hidden;
-
     background: linear-gradient(-45deg, #0A192F, #112240, #0A192F, #020c1b);
     background-size:400% 400%;
     animation: fondoAnimado 10s ease infinite;
@@ -40,20 +39,17 @@ header{
     align-items:center;
 }
 
-/* 👇 Ahora animamos la imagen externa */
 .logo-img{
     width:60px;
     height:auto;
     animation: rotar 6s linear infinite, flotar 3s ease-in-out infinite;
 }
 
-/* Rotación */
 @keyframes rotar{
     from{transform:rotate(0deg);}
     to{transform:rotate(360deg);}
 }
 
-/* Flotación */
 @keyframes flotar{
     0%,100%{transform:translateY(0px);}
     50%{transform:translateY(-6px);}
@@ -129,31 +125,27 @@ footer{
         font-size:35px;
     }
 }
-
 </style>
 </head>
 <body>
 
 <header>
     <div class="logo">
-
-        <!-- 👇 LOGO EXTERNO -->
         <img src="logo.svg" alt="Logo NovaTech" class="logo-img">
-
         <h2>NovaTech</h2>
     </div>
 
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
 </header>
 
 <section class="hero">
     <h1>Innovación Digital para el Futuro</h1>
     <p>En NovaTech desarrollamos soluciones tecnológicas modernas, seguras y eficientes para tu negocio.</p>
-    <a href="#" class="btn">Conoce Más</a>
+    <a href="servicios.html" class="btn">Conoce Más</a>
 </section>
 
 <footer>

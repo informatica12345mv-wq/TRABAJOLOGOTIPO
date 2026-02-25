@@ -12,6 +12,10 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, sans-serif;
     color:white;
@@ -105,6 +109,39 @@ nav a:hover{
     transform:scale(1.05);
 }
 
+/* NUEVA SECCIÓN INFO */
+
+.info{
+    padding:100px 20px;
+    text-align:center;
+    background:#112240;
+}
+
+.info h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#0A192F;
+    padding:30px;
+    width:250px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
 footer{
     text-align:center;
     padding:25px;
@@ -145,7 +182,29 @@ footer{
 <section class="hero">
     <h1>Innovación Digital para el Futuro</h1>
     <p>En NovaTech desarrollamos soluciones tecnológicas modernas, seguras y eficientes para tu negocio.</p>
-    <a href="servicios.html" class="btn">Conoce Más</a>
+    <a href="#info" class="btn">Conoce Más</a>
+</section>
+
+<!-- NUEVA SECCIÓN -->
+<section class="info" id="info">
+    <h2>¿Por qué elegir NovaTech?</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Innovación</h3>
+            <p>Aplicamos tecnología moderna para impulsar tu negocio.</p>
+        </div>
+
+        <div class="card">
+            <h3>Seguridad</h3>
+            <p>Protegemos tus datos con sistemas confiables y eficientes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Soporte</h3>
+            <p>Acompañamiento técnico continuo para tu crecimiento.</p>
+        </div>
+    </div>
 </section>
 
 <footer>

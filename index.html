@@ -1,99 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaTech</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaTech</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background-color:#0A192F;
-            color:white;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        header{
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            padding:20px 50px;
-            background-color:#0A192F;
-        }
+body{
+    font-family:Arial, sans-serif;
+    color:white;
+    overflow-x:hidden;
 
-        .logo{
-            display:flex;
-            align-items:center;
-        }
+    background: linear-gradient(-45deg, #0A192F, #112240, #0A192F, #020c1b);
+    background-size:400% 400%;
+    animation: fondoAnimado 10s ease infinite;
+}
 
-        .logo-circle{
-            width:50px;
-            height:50px;
-            background-color:#64FFDA;
-            border-radius:50%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:24px;
-            font-weight:bold;
-            color:#0A192F;
-            margin-right:10px;
-        }
+@keyframes fondoAnimado{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
 
-        nav a{
-            color:#64FFDA;
-            text-decoration:none;
-            margin-left:20px;
-            font-weight:bold;
-        }
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
 
-        nav a:hover{
-            color:white;
-        }
+.logo{
+    display:flex;
+    align-items:center;
+}
 
-        .hero{
-            text-align:center;
-            padding:100px 20px;
-        }
+/* 👇 Ahora animamos la imagen externa */
+.logo-img{
+    width:60px;
+    height:auto;
+    animation: rotar 6s linear infinite, flotar 3s ease-in-out infinite;
+}
 
-        .hero h1{
-            font-size:48px;
-        }
+/* Rotación */
+@keyframes rotar{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
 
-        .hero p{
-            font-size:18px;
-            margin-top:20px;
-            color:#cccccc;
-        }
+/* Flotación */
+@keyframes flotar{
+    0%,100%{transform:translateY(0px);}
+    50%{transform:translateY(-6px);}
+}
 
-        .btn{
-            display:inline-block;
-            margin-top:30px;
-            padding:12px 25px;
-            background-color:#64FFDA;
-            color:#0A192F;
-            text-decoration:none;
-            font-weight:bold;
-            border-radius:5px;
-        }
+.logo h2{
+    margin-left:12px;
+    font-size:24px;
+}
 
-        .btn:hover{
-            background-color:white;
-        }
+nav a{
+    color:#64FFDA;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
 
-        footer{
-            text-align:center;
-            padding:20px;
-            background-color:#020c1b;
-            margin-top:50px;
-        }
-    </style>
+nav a:hover{
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#cccccc;
+    max-width:600px;
+    margin:0 auto 30px auto;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background-color:#64FFDA;
+    color:#0A192F;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background-color:white;
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background-color:#020c1b;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
+
+</style>
 </head>
 <body>
 
 <header>
     <div class="logo">
-        <div class="logo-circle">N</div>
+
+        <!-- 👇 LOGO EXTERNO -->
+        <img src="logo.svg" alt="Logo NovaTech" class="logo-img">
+
         <h2>NovaTech</h2>
     </div>
 

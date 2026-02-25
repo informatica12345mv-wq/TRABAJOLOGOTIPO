@@ -3,51 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Studio | Diseño Digital</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NovaTech</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background-color:#0A192F;
+            color:white;
+        }
+
+        header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:20px 50px;
+            background-color:#0A192F;
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+        }
+
+        .logo-circle{
+            width:50px;
+            height:50px;
+            background-color:#64FFDA;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:24px;
+            font-weight:bold;
+            color:#0A192F;
+            margin-right:10px;
+        }
+
+        nav a{
+            color:#64FFDA;
+            text-decoration:none;
+            margin-left:20px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:white;
+        }
+
+        .hero{
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h1{
+            font-size:48px;
+        }
+
+        .hero p{
+            font-size:18px;
+            margin-top:20px;
+            color:#cccccc;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            padding:12px 25px;
+            background-color:#64FFDA;
+            color:#0A192F;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background-color:white;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background-color:#020c1b;
+            margin-top:50px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <div class="logo">NEXUS<span>STUDIO</span></div>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <div class="logo">
+        <div class="logo-circle">N</div>
+        <h2>NovaTech</h2>
+    </div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Creamos el futuro digital.</h1>
-            <p>Diseño minimalista con un impacto máximo.</p>
-            <a href="#" class="btn">Empezar proyecto</a>
-        </div>
-    </section>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
 
-    <section class="services container">
-        <h2>Nuestros Servicios</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Branding</h3>
-                <p>Identidades que cuentan historias únicas.</p>
-            </div>
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Interfaces intuitivas y de alto rendimiento.</p>
-            </div>
-            <div class="card">
-                <h3>Strategy</h3>
-                <p>Planes enfocados al crecimiento real.</p>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+    <h1>Innovación Digital para el Futuro</h1>
+    <p>En NovaTech desarrollamos soluciones tecnológicas modernas, seguras y eficientes para tu negocio.</p>
+    <a href="#" class="btn">Conoce Más</a>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Nexus Studio. Todos los derechos reservados.</p>
-    </footer>
+<footer>
+    © 2026 NovaTech - Todos los derechos reservados
+</footer>
 
 </body>
 </html>
